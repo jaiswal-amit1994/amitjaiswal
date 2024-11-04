@@ -24,7 +24,7 @@ export default function Home() {
           Hey, I'm Amit Jaiswal
         </h1>
         <p className="font-light text-muted-foreground">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident exercitationem deleniti sit quas? Vitae accusantium, optio eligendi qui excepturi ab sint a maxime pariatur facilis, illo error dolore, officia harum.
+        I'm a selectively skilled front-end developer with a strong focus on building high-quality, impactful digital experiences that seamlessly blend design and functionality.
         </p>
       </div>
       <div className="flex justify-center">

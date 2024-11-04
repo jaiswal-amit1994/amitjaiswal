@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row items-center pt-20 pb-6 px-4">
+    <footer className="flex flex-col md:flex-row items-center pt-20 pb-6">
   <div className="container mx-auto max-w-3xl justify-between">
     
     <h1 className="title no-underline mb-4">Stay Connected</h1>
@@ -11,38 +11,38 @@ export default function Footer() {
       <div>
         <ul className='space-y-2'>
           <li>
-            <Link className='block font-light text-gray-600 text-lg sm:text-xl' href={'/'}>Dribbble</Link>
+            <Link className='block font-light text-muted-foreground' href={'/'}>Dribbble</Link>
           </li>
           <li>
-            <Link className='block font-light text-gray-600 text-lg sm:text-xl' href={'/'}>Youtube</Link>
+            <Link className='block font-light text-muted-foreground' href={'/'}>Youtube</Link>
           </li>
           <li>
-            <Link className='block font-light text-gray-600 text-lg sm:text-xl' href={'/'}>Linkedin</Link>
+            <Link className='block font-light text-muted-foreground' href={'/'}>Linkedin</Link>
           </li>
         </ul>
       </div>
       <div>
         <ul className='space-y-2'>
           <li>
-            <Link className='block font-light text-gray-600 text-lg sm:text-xl' href={'/'}>Instagram</Link>
+            <Link className='block font-light text-muted-foreground' href={'/'}>Instagram</Link>
           </li>
           <li>
-            <Link className='block font-light text-gray-600 text-lg sm:text-xl' href={'/'}>Facebook</Link>
+            <Link className='block font-light text-muted-foreground' href={'/'}>Facebook</Link>
           </li>
           <li>
-            <Link className='block font-light text-gray-600 text-lg sm:text-xl' href={'/'}>Behance</Link>
+            <Link className='block font-light text-muted-foreground' href={'/'}>Behance</Link>
           </li>
         </ul>
       </div>
       <div>
         <ul className='space-y-4'>
           <li>
-            <label className='block font-light text-gray-600 text-base sm:text-lg' htmlFor="">Email</label>
-            <Link className='block font-light text-blue-500 text-base sm:text-lg' href={'/'}>jaiswalamit1994@gmail.com</Link>
+            <label className='block font-light text-muted-foreground' htmlFor="">Email</label>
+            <Link className='block font-light text-blue-500' href={'/'}>jaiswalamit1994@gmail.com</Link>
           </li>
           <li>
-            <label className='block font-light text-gray-600 text-base sm:text-lg' htmlFor="">Phone</label>
-            <Link className='block font-light text-blue-500 text-base sm:text-lg' href={'/'}>+91 7607520136</Link>
+            <label className='block font-light text-muted-foreground' htmlFor="">Phone</label>
+            <Link className='block font-light text-blue-500' href={'/'}>+91 7607520136</Link>
           </li>
         </ul>
       </div>
@@ -51,10 +51,10 @@ export default function Footer() {
    
 
     <div className="flex flex-col md:flex-row justify-between items-center py-4">
-  <p className="text-xs md:text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
+  <p className="font-light text-muted-foreground text-xs md:text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
   <div className="flex space-x-4 mt-2 md:mt-0">
-    <a href="/privacy-policy" className="text-xs md:text-sm text-blue-600 hover:underline">Privacy Policy</a>
-    <a href="/terms-of-service" className="text-xs md:text-sm text-blue-600 hover:underline">Terms of Service</a>
+    <a href="/privacy-policy" className="text-xs md:text-sm font-light text-muted-foreground">Privacy Policy</a>
+    <a href="/terms-of-service" className="text-xs md:text-sm font-light text-muted-foreground">Terms of Service</a>
   </div>
 </div>
 
