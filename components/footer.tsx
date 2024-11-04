@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row items-center gap-x-10 gap-y-8 py-20 px-4">
+    <footer className="flex flex-col md:flex-row items-center pt-20 pb-6 px-4">
   <div className="container mx-auto max-w-3xl justify-between">
-    <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+    
     <h1 className="title no-underline mb-4">Stay Connected</h1>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
       <div>
