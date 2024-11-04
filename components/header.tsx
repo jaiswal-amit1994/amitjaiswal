@@ -3,7 +3,7 @@ import ThemeToggle from "./theme-toggle";
 
 export default function Header() {
     return(
-        <header className="fixed inset-x-0 top-0 z-50 bg-white py-6">
+        <header className="fixed inset-x-0 top-0 z-50 bg-background/75 py-6">
           <nav className="container mx-auto flex max-w-3xl items-center justify-between">
              <div>
                 <Link href="/" className="font-serif text-2xl font-bold">AK</Link>
