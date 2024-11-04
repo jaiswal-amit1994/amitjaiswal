@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
     darkMode: ["class"],
@@ -8,7 +9,18 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	container: {
+     center: true,
+	 padding: '2rem',
+	 screens: {
+		"2xl" : '1400px',
+	 },
+	},
   	extend: {
+		fontFamily: {
+			sans: ['var(--font-sans)', ...fontFamily.sans],
+			serif: ['var(--font-serif)', ...fontFamily.serif] // Add the missing comma here
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -58,6 +70,9 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+	require("tailwindcss-animate"),
+    require("@tailwindcss/typography"), 
+  ],
 };
 export default config;

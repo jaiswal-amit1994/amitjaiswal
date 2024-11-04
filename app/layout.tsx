@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Providers from "@/components/providers";
 import "./globals.css";
+import { Children } from "react";
+import { cn } from "@/lib/utils";
+import { Inter, Playfair_Display } from 'next/font/google';
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-serif'
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,11 +36,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn('flex min-h-screen flex-col font-sans antialised',
+          inter.variable,
+          playfair.variable
+        )}
       >
-        {children}
+        <Providers>
+          <Header />
+          <main className="grow">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
