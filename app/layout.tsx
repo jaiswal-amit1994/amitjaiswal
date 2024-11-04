@@ -37,13 +37,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
+      {/* <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${inter.variable} font-sans`}
         className={cn('flex min-h-screen flex-col font-sans antialised',
           inter.variable,
           playfair.variable
         )}
-      >
+      > */}
+        <body className={cn(`${inter.variable} ${playfair.variable} antialiased`)}>
         <Providers>
           <Header />
           <main className="grow">{children}</main>
