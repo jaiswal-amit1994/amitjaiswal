@@ -5,6 +5,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row items-center gap-x-10 gap-y-4 py-20">
       <div className="container mx-auto max-w-3xl justify-between">
+      <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
       <h3 className='title mb-4'>Connect</h3>
       <div className="grid grid-cols-3 gap-4 w-full">
         <div>

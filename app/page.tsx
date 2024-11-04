@@ -1,21 +1,47 @@
-"use client";
+'use client'
 
-import React, { useEffect } from "react";
-import LocomotiveScroll from "locomotive-scroll";
+import React, { useEffect } from 'react'
+import LocomotiveScroll from 'locomotive-scroll'
+import Image from 'next/image'
 
 export default function Home() {
-  useEffect(() => {
-    // Ensure this code runs only in the client (browser)
-    if (typeof window !== "undefined") {
-      const locomotiveScroll = new LocomotiveScroll();
-    }
-  }, []);
+    useEffect(() => {
+        // Ensure this code runs only in the client (browser)
+        if (typeof window !== 'undefined') {
+            const locomotiveScroll = new LocomotiveScroll()
+        }
+    }, [])
 
-  return (
-    <section className="flex flex-col md:flex-row items-center gap-x-10 gap-y-4 py-20">
-      <div className="container mx-auto flex max-w-3xl items-center justify-between">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora cupiditate dicta veniam! Rem minima quas, alias nemo cupiditate maxime aut quasi necessitatibus, corporis saepe eligendi amet inventore cumque modi totam consectetur odit laudantium ullam quidem ut eos perferendis maiores? Quibusdam vero asperiores pariatur corporis, obcaecati, ex ea culpa consectetur non esse deserunt iste aliquid, officiis reiciendis molestias quae reprehenderit eos hic atque porro odio? Et facere est ipsum. Error quae autem quibusdam tempore atque dolorum assumenda numquam laudantium repellat eius qui debitis voluptate dignissimos aliquid placeat ad et magni odio doloribus, mollitia ducimus ipsum. Asperiores similique maiores aliquam labore, veritatis eos quod nam corrupti fuga, et beatae. Temporibus, nulla eius! Accusamus nam sequi dolorum, ratione earum alias? Accusantium quos odit sit vitae nesciunt odio cupiditate commodi sapiente asperiores. Obcaecati vero esse ullam rerum inventore hic maxime a? Sint doloremque distinctio adipisci voluptate amet quidem beatae, harum totam eum. Culpa ipsam corporis tenetur ab ullam numquam sunt atque dolorum amet perferendis itaque quos quisquam optio ea doloribus voluptas, at minus eum? Libero quidem eos at illo odit necessitatibus quisquam, voluptatibus possimus quos nisi. Quas quae odit aspernatur ducimus vero hic, culpa aperiam sunt excepturi laudantium ab molestiae, delectus quisquam quasi voluptatem vitae nemo rem laborum animi ut? Vel optio expedita neque nulla dicta necessitatibus explicabo dignissimos, fugiat, tempore debitis voluptate mollitia at ratione dolorem, obcaecati praesentium eos! Aliquid quidem eligendi tempore explicabo quam voluptates, exercitationem eaque error recusandae enim ut possimus. Quibusdam rem omnis exercitationem dolorem illum incidunt natus, amet nulla nemo consectetur voluptas debitis aut cumque error? Mollitia, minus amet exercitationem ad vero voluptas quod sequi laboriosam quidem iusto maiores facere commodi maxime cupiditate ducimus natus vitae placeat sint ut ipsa. Id rerum nisi architecto facere esse inventore nemo impedit tempore vel quasi, fugit sapiente nulla, aperiam repellendus, distinctio asperiores numquam deserunt in incidunt consectetur eum expedita. Provident ipsam doloribus optio nihil saepe nam soluta ex quaerat eveniet blanditiis consectetur tempore porro nostrum aspernatur quae nisi rem quas, doloremque ullam inventore quis. Tenetur quo unde recusandae, nesciunt repudiandae necessitatibus porro consequuntur ipsam earum quaerat iure quasi adipisci perferendis, ipsa sapiente. Sint, commodi incidunt blanditiis optio, non dolor sequi voluptatum cum in, porro nam exercitationem labore vero dolore ab tempore voluptates nostrum architecto veritatis excepturi eius qui sit soluta repellat. Doloribus iure eaque sint explicabo quas adipisci, et nostrum dignissimos aliquid facere fugiat necessitatibus. Iure eos quaerat velit quasi vel. Libero, quia sunt rerum fugiat maiores saepe optio voluptatum dolorum deserunt velit repellendus eius nisi eligendi. Quidem praesentium voluptate enim ad provident tenetur sed labore deleniti dolores consequatur, aperiam nihil accusamus pariatur ullam sit magni asperiores alias. In, blanditiis, id exercitationem modi vero labore cum culpa totam placeat iure officiis voluptatem porro amet temporibus veniam doloremque? Accusantium voluptate nisi, odit minus accusamus illum fugit similique nesciunt impedit. Consequuntur voluptates harum dolor. Placeat, magnam nemo! Reiciendis, obcaecati hic dolorum, in laudantium eaque repudiandae placeat aliquam deleniti culpa eos quidem ad ex nobis fuga nesciunt delectus maxime, tempore repellendus reprehenderit atque libero vel.</p>
-      </div>
-    </section>
-  );
+    return (
+        <section className="flex flex-col items-center gap-x-10 gap-y-4 py-20 md:flex-row">
+            <div className="container mx-auto max-w-3xl justify-between">
+                <div className="flex flex-col items-center gap-x-10 gap-y-4 py-16 md:flex-row">
+                    <div className="mt-2 flex-1 md:mt-0">
+                        <h1 className="title no-underline">
+                            Hey, I'm Amit Jaiswal
+                        </h1>
+                        <p className="mt-3 font-light text-muted-foreground">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Provident exercitationem deleniti sit quas?
+                            Vitae accusantium, optio eligendi qui excepturi ab
+                            sint a maxime pariatur facilis, illo error dolore,
+                            officia harum.
+                        </p>
+                    </div>
+                    <div className="relative">
+                        <Image
+                            className="flex-1 rounded-lg grayscale"
+                            src={
+                                'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                            }
+                            alt="amit jaiswal"
+                            width={175}
+                            height={175}
+                            priority
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
 }
