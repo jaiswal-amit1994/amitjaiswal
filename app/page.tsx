@@ -4,6 +4,28 @@ import React, { useEffect } from 'react'
 import LocomotiveScroll from 'locomotive-scroll'
 import Image from 'next/image'
 
+const tableData = [
+    {
+        name: '2021',
+        role: 'Frontend Developer',
+        company: 'TechCorp',
+        status: 'Active',
+    },
+    {
+        name: '2019',
+        role: 'Backend Developer',
+        company: 'TechCorp',
+        status: 'Inactive',
+    },
+    {
+        name: '2017',
+        role: 'UI/UX Designer',
+        company: 'TechCorp',
+        status: 'Active',
+    },
+    // Add more objects for additional rows
+]
+
 export default function Home() {
     useEffect(() => {
         // Ensure this code runs only in the client (browser)
@@ -87,13 +109,64 @@ export default function Home() {
                                         {item.title}
                                     </h3>
                                     <div className="ml-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                                        <div className="pl-4 sm:pl-6 md:pl-8 font-light text-muted-foreground">
+                                        <div className="pl-4 font-light text-muted-foreground sm:pl-6 md:pl-8">
                                             {item.description}
                                         </div>
                                     </div>
                                 </div>
                             )
                         })}
+                    </div>
+                </div>
+            </section>
+
+            <section className="flex py-10">
+                <div className="container mx-auto max-w-3xl">
+                    <h1 className="title mb-8">Experience</h1>
+                    <p className="pb-4 font-light text-muted-foreground">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore nulla sunt excepturi quidem incidunt est numquam
+                        repellat corporis aut minima distinctio, quasi
+                        perferendis deleniti ex magni laboriosam earum
+                        voluptatem sint nam? Ipsam, corrupti. Temporibus autem
+                        repellendus nulla ea hic quia assumenda explicabo
+                        cumque. Culpa nesciunt ea sunt, voluptate impedit at!
+                    </p>
+                </div>
+            </section>
+
+            <section className="flex py-10">
+                <div className="container mx-auto max-w-3xl">
+                    <h1 className="title mb-8">History</h1>
+                    <div className="overflow-x-auto">
+                        <table className="min-w-full border-gray-200">
+                            <tbody>
+                                {tableData.map((item, index) => (
+                                    <tr
+                                        key={index}
+                                        className={`${
+                                            index === tableData.length - 1
+                                                ? 'border-b border-t'
+                                                : 'border-t'
+                                        }`}
+                                    >
+                                        <td className="w-1/4 py-4 align-top">
+                                            <h2 className="flex-grow whitespace-nowrap text-xl font-semibold sm:text-2xl md:text-3xl lg:text-3xl">
+                                            {item.name}
+                                            </h2>
+                                        </td>
+                                        <td className="py-4 align-top">
+                                        <h2 className="flex-grow whitespace-nowrap text-xl font-semibold sm:text-2xl md:text-3xl lg:text-3xl">
+                                                {item.role}
+                                            </h2>
+                                            <p className="font-light text-muted-foreground">
+                                                {item.company}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </section>
