@@ -26,6 +26,28 @@ const tableData = [
     // Add more objects for additional rows
 ]
 
+const features = [
+    { name: 'Fiat', description: 'AEM Developer' },
+    { name: 'Fiatprofessional', description: 'AEM Developer' },
+    { name: 'Jeep', description: 'AEM Developer' },
+    { name: 'Lancia', description: 'AEM Developer' },
+    { name: 'TATA', description: 'Frontend Dev' },
+    { name: 'IDBI', description: 'Frontend Dev' },
+    { name: 'Mahindra Finance', description: 'Frontend Dev' },
+    { name: 'DHL', description: 'Frontend Dev' },
+    { name: 'Vedanta', description: 'Frontend Dev' },
+]
+
+const people = [
+    {
+        name: 'Leslie Alexander',
+        role: 'Co-Founder / CEO',
+        imageUrl:
+            'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+    },
+    // More people...
+]
+
 export default function Home() {
     useEffect(() => {
         // Ensure this code runs only in the client (browser)
@@ -33,6 +55,16 @@ export default function Home() {
             const locomotiveScroll = new LocomotiveScroll()
         }
     }, [])
+
+    const people = [
+        {
+            name: 'Leslie Alexander',
+            role: 'Co-Founder / CEO',
+            imageUrl:
+                'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        },
+        // More people...
+    ]
 
     return (
         <>
@@ -67,69 +99,64 @@ export default function Home() {
                 </div>
             </section>
 
-           
-
-
             <section className="flex items-center py-10">
-    <div className="container mx-auto max-w-3xl">
-        <h1 className="title mb-8">What I Do</h1>
+                <div className="container mx-auto max-w-3xl">
+                    <h1 className="title mb-8">What I Do</h1>
 
-        <div className="overflow-x-auto">
-            <table className="min-w-full border-gray-200">
-                <tbody>
-                    {[
-                        {
-                            title: '3D',
-                            description:
-                                'Building responsive and user-friendly websites using the latest technologies.',
-                        },
-                        {
-                            title: 'Visual',
-                            description:
-                                'Designing intuitive interfaces that provide an exceptional user experience.',
-                        },
-                        {
-                            title: 'Motion',
-                            description:
-                                'Crafting digital strategies to increase visibility and engagement.',
-                        },
-                        {
-                            title: 'Product',
-                            description:
-                                'Producing high-quality content that resonates with target audiences.',
-                        },
-                        {
-                            title: 'Tutorials',
-                            description:
-                                'Implementing strategies to improve search engine rankings and drive organic traffic.',
-                        },
-                    ].map((item, index, array) => {
-                        const isLast = index === array.length - 1; // Determine if the current item is the last
-                        return (
-                            <tr
-                                key={index}
-                                className={`border-t relative group ${isLast ? 'border-b' : 'border-b-0'}`}
-                            >
-                                <td className="py-4 align-top">
-                                    <h2 className="flex-grow whitespace-nowrap uppercase text-muted-foreground text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-7xl">
-                                        {item.title}
-                                    </h2>
-                                </td>
-                                <td className="py-4 align-top relative">
-                                    <div className="font-light pl-8 hidden sm:block text-muted-foreground opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                                        {item.description}
-                                    </div>
-                                </td>
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
-
-
+                    <div className="overflow-x-auto">
+                        <table className="min-w-full border-gray-200">
+                            <tbody>
+                                {[
+                                    {
+                                        title: '3D',
+                                        description:
+                                            'Building responsive and user-friendly websites using the latest technologies.',
+                                    },
+                                    {
+                                        title: 'Visual',
+                                        description:
+                                            'Designing intuitive interfaces that provide an exceptional user experience.',
+                                    },
+                                    {
+                                        title: 'Motion',
+                                        description:
+                                            'Crafting digital strategies to increase visibility and engagement.',
+                                    },
+                                    {
+                                        title: 'Product',
+                                        description:
+                                            'Producing high-quality content that resonates with target audiences.',
+                                    },
+                                    {
+                                        title: 'Tutorials',
+                                        description:
+                                            'Implementing strategies to improve search engine rankings and drive organic traffic.',
+                                    },
+                                ].map((item, index, array) => {
+                                    const isLast = index === array.length - 1 // Determine if the current item is the last
+                                    return (
+                                        <tr
+                                            key={index}
+                                            className={`group relative border-t ${isLast ? 'border-b' : 'border-b-0'}`}
+                                        >
+                                            <td className="py-4 align-top">
+                                                <h2 className="flex-grow whitespace-nowrap text-3xl font-semibold uppercase text-muted-foreground sm:text-4xl md:text-5xl lg:text-7xl">
+                                                    {item.title}
+                                                </h2>
+                                            </td>
+                                            <td className="relative py-4 align-top">
+                                                <div className="hidden pl-8 font-light text-muted-foreground opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 sm:block">
+                                                    {item.description}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    )
+                                })}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
             <section className="flex py-10">
                 <div className="container mx-auto max-w-3xl">
@@ -163,11 +190,11 @@ export default function Home() {
                                     >
                                         <td className="w-1/4 py-4 align-top">
                                             <h2 className="flex-grow whitespace-nowrap text-xl font-semibold sm:text-2xl md:text-3xl lg:text-3xl">
-                                            {item.name}
+                                                {item.name}
                                             </h2>
                                         </td>
                                         <td className="py-4 align-top">
-                                        <h2 className="flex-grow whitespace-nowrap text-xl font-semibold sm:text-2xl md:text-3xl lg:text-3xl">
+                                            <h2 className="flex-grow whitespace-nowrap text-xl font-semibold sm:text-2xl md:text-3xl lg:text-3xl">
                                                 {item.role}
                                             </h2>
                                             <p className="font-light text-muted-foreground">
@@ -179,6 +206,30 @@ export default function Home() {
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </section>
+
+            <section className="flex py-10">
+                <div className="container mx-auto max-w-3xl">
+                    <h1 className="title mb-8">Brands That Trust My Work</h1>
+                    {/* <p className="mt-4 text-gray-500">
+            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards.
+          </p> */}
+                    <dl className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
+                        {features.map(feature => (
+                            <div
+                                key={feature.name}
+                                className="border-t border-gray-200 pt-4"
+                            >
+                                <dt className="font-medium text-gray-900">
+                                    {feature.name}
+                                </dt>
+                                <dd className="text-sm text-gray-500">
+                                    {feature.description}
+                                </dd>
+                            </div>
+                        ))}
+                    </dl>
                 </div>
             </section>
         </>
