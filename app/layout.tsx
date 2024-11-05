@@ -48,6 +48,7 @@ export default function RootLayout({
         <body className={cn(`${inter.variable} ${playfair.variable} antialiased`)}>
         <Providers>
           <Header />
+          <div className="w-full py-10"></div>
           <main className="grow">{children}</main>
           <Footer />
         </Providers>

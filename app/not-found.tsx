@@ -5,7 +5,7 @@ export default function Custom404() {
   return (
 
     
-<section className="flex items-center py-20">
+<section className="flex items-center py-10">
   <div className="container mx-auto max-w-3xl">
 
   <div className="relative">

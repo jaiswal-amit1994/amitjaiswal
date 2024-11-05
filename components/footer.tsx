@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row items-center pt-20 pb-6">
+    <footer className="flex flex-col md:flex-row items-center pt-10">
   <div className="container mx-auto max-w-3xl justify-between">
     
-    <h1 className="title no-underline mb-4">Stay Connected</h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+    <h1 className="title no-underline mb-8">Stay Connected</h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full pb-10">
       <div>
         <ul className='space-y-2'>
           <li>
@@ -47,7 +47,7 @@ export default function Footer() {
         </ul>
       </div>
     </div>
-    <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+    <hr className="h-px bg-gray-200 border-0 dark:bg-gray-700" />
    
 
     <div className="flex flex-col md:flex-row justify-between items-center py-4">
