@@ -1,35 +1,43 @@
 import Link from 'next/link';
-import { ArrowLeftIcon } from "@radix-ui/react-icons"
+import { ArrowLeftIcon, ExclamationTriangleIcon } from "@radix-ui/react-icons"
 
 export default function Custom404() {
   return (
 
     
-  
-  <section className="flex items-center py-20">
+<section className="flex items-center py-20">
   <div className="container mx-auto max-w-3xl">
+
   <div className="relative">
-      <div className="relative">
-        <span className="text-lg font-extrabold text-rose-200">404</span>
-      </div>
-      <h1 className="title mb-4">
-          Oops! That page got lost in code.
-        </h1>
-      
-    </div>
-    <p className="mt-2 max-w-lg text-left font-light text-muted-foreground">
-      It looks like the page you’re looking for doesn’t exist or may have been removed. Let's get back on track!
-    </p>
-    <div className="mt-6">
-      <Link href="/" className='block title'>
-        <div className="inline-flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <ArrowLeftIcon className="h-5 w-5" />
-          Go Back Home
+          <h1 className="title flex items-center mb-4">
+          <ExclamationTriangleIcon className="me-2" />Oops! That page got lost in code.
+          </h1>
         </div>
-      </Link>
-    </div>
+        <div className="mt-2 max-w-lg text-left font-light text-muted-foreground">
+  Oops! It seems that the page you're looking for has either been moved or doesn't exist anymore. But don't worry! Let's get back on track together!
+  
+  <span className="block mt-4">
+    <strong>Here’s what you can do:</strong>
+  </span>
+  <ul className="list-disc list-inside mt-4 mb-4">
+    <li>Check the URL for any typos or errors.</li>
+    <li>Go Back Home to explore our other exciting content!</li>
+    <li>Use the search bar above to find exactly what you're looking for.</li>
+  </ul>
+  If you need further assistance, feel free to reach out to our support team. We’re here to help!
+</div>
+
+        <Link href="/" className="inline-flex items-center gap-2 mt-8 focus:outline-none">
+          <ArrowLeftIcon className="h-5 w-5" />
+          <span>Go Back Home</span>
+        </Link>
+
+    
   </div>
 </section>
+
+
+
 
     
   );
