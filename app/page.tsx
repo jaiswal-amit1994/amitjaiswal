@@ -86,7 +86,7 @@ export default function Home() {
                             <Image
                                 data-scroll
                                 data-scroll-speed="0.1"
-                                className="rounded-lg grayscale"
+                                className="rounded-lg grayscale mt-8"
                                 src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                 alt="amit jaiswal"
                                 layout="responsive"
@@ -158,7 +158,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex py-10">
+            {/* <section className="flex py-10">
                 <div className="container mx-auto max-w-3xl">
                     <h1 className="title mb-8">Experience</h1>
                     <p className="pb-4 font-light text-muted-foreground">
@@ -171,11 +171,20 @@ export default function Home() {
                         cumque. Culpa nesciunt ea sunt, voluptate impedit at!
                     </p>
                 </div>
-            </section>
+            </section> */}
 
             <section className="flex py-10">
                 <div className="container mx-auto max-w-3xl">
-                    <h1 className="title mb-8">History</h1>
+                    <h1 className="title mb-8 text-lg font-medium">History</h1>
+                    <p className="pb-4 font-light text-muted-foreground">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolore nulla sunt excepturi quidem incidunt est numquam
+                        repellat corporis aut minima distinctio, quasi
+                        perferendis deleniti ex magni laboriosam earum
+                        voluptatem sint nam? Ipsam, corrupti. Temporibus autem
+                        repellendus nulla ea hic quia assumenda explicabo
+                        cumque. Culpa nesciunt ea sunt, voluptate impedit at!
+                    </p>
                     <div className="overflow-x-auto">
                         <table className="min-w-full border-gray-200">
                             <tbody>
@@ -211,7 +220,7 @@ export default function Home() {
 
             <section className="flex py-10">
                 <div className="container mx-auto max-w-3xl">
-                    <h1 className="title mb-8">Brands That Trust My Work</h1>
+                    <h1 className="title mb-8 text-lg font-medium">Brands That Trust My Work</h1>
                     {/* <p className="mt-4 text-gray-500">
             The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards.
           </p> */}
@@ -232,6 +241,40 @@ export default function Home() {
                     </dl>
                 </div>
             </section>
+
+
+
+            <section className="relative h-[500px] overflow-hidden">
+    <div 
+        className="parallax bg-cover bg-center h-full w-full"
+        style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1475257026007-0753d5429e10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundAttachment: 'fixed', // Parallax effect
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }}
+    >
+
+        {/* Blur background overlay */}
+        <div className="absolute inset-0 bg-background/75 backdrop-blur-sm"></div>
+        
+        <div className="absolute inset-0 flex items-center justify-center">
+           <div className="container mx-auto max-w-3xl">
+           <h1 className="title mb-8 text-lg font-medium text-center">MY MOTO</h1>
+          
+<h1 className="text-center pb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
+Simplicity is the ultimate sophistication.
+</h1>
+<p className="text-center text-sm sm:text-base md:text-lg lg:text-xl font-light">
+    <i>– Leonardo da Vinci</i>
+</p>
+
+           </div>
+        </div>
+    </div>
+</section>
+
+
         </>
     )
 }
