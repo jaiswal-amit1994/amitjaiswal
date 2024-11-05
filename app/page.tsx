@@ -67,58 +67,69 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex items-center py-10">
-                <div className="container mx-auto max-w-3xl">
-                    <h1 className="title mb-8">What I Do</h1>
+           
 
-                    <div className="grid grid-cols-1">
-                        {[
-                            {
-                                title: '3D',
-                                description:
-                                    'Building responsive and user-friendly websites using the latest technologies.',
-                            },
-                            {
-                                title: 'Visual',
-                                description:
-                                    'Designing intuitive interfaces that provide an exceptional user experience.',
-                            },
-                            {
-                                title: 'Motion',
-                                description:
-                                    'Crafting digital strategies to increase visibility and engagement.',
-                            },
-                            {
-                                title: 'Product',
-                                description:
-                                    'Producing high-quality content that resonates with target audiences.',
-                            },
-                            {
-                                title: 'Tutorials',
-                                description:
-                                    'Implementing strategies to improve search engine rankings and drive organic traffic.',
-                            },
-                        ].map((item, index, array) => {
-                            const isLast = index === array.length - 1 // Determine if the current item is the last
-                            return (
-                                <div
-                                    key={index}
-                                    className={`title group relative flex items-center overflow-hidden border-t py-4 ${isLast ? 'border-b' : 'border-b-0'}`}
-                                >
-                                    <h3 className="flex-grow whitespace-nowrap text-2xl font-semibold uppercase sm:text-3xl md:text-4xl lg:text-5xl">
+
+            <section className="flex items-center py-10">
+    <div className="container mx-auto max-w-3xl">
+        <h1 className="title mb-8">What I Do</h1>
+
+        <div className="overflow-x-auto">
+            <table className="min-w-full border-gray-200">
+                <tbody>
+                    {[
+                        {
+                            title: '3D',
+                            description:
+                                'Building responsive and user-friendly websites using the latest technologies.',
+                        },
+                        {
+                            title: 'Visual',
+                            description:
+                                'Designing intuitive interfaces that provide an exceptional user experience.',
+                        },
+                        {
+                            title: 'Motion',
+                            description:
+                                'Crafting digital strategies to increase visibility and engagement.',
+                        },
+                        {
+                            title: 'Product',
+                            description:
+                                'Producing high-quality content that resonates with target audiences.',
+                        },
+                        {
+                            title: 'Tutorials',
+                            description:
+                                'Implementing strategies to improve search engine rankings and drive organic traffic.',
+                        },
+                    ].map((item, index, array) => {
+                        const isLast = index === array.length - 1; // Determine if the current item is the last
+                        return (
+                            <tr
+                                key={index}
+                                className={`border-t relative group ${isLast ? 'border-b' : 'border-b-0'}`}
+                            >
+                                <td className="py-4 align-top">
+                                    <h2 className="flex-grow whitespace-nowrap uppercase text-muted-foreground text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-7xl">
                                         {item.title}
-                                    </h3>
-                                    <div className="ml-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                                        <div className="pl-4 font-light text-muted-foreground sm:pl-6 md:pl-8">
-                                            {item.description}
-                                        </div>
+                                    </h2>
+                                </td>
+                                <td className="py-4 align-top relative">
+                                    <div className="font-light pl-8 hidden sm:block text-muted-foreground opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                                        {item.description}
                                     </div>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            </section>
+                                </td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
 
             <section className="flex py-10">
                 <div className="container mx-auto max-w-3xl">
