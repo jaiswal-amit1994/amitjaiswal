@@ -53,7 +53,9 @@ export default function Footer() {
     <div className="flex flex-col md:flex-row justify-between items-center py-4">
   <p className="font-light text-muted-foreground text-xs md:text-sm">&copy; 2024 Your Company Name. All rights reserved.</p>
   <div className="flex space-x-4 mt-2 md:mt-0">
-    <a href="/privacy-policy" className="text-xs md:text-sm font-light text-muted-foreground">Privacy Policy</a>
+  <Link href="/privacy-policy" className="text-xs md:text-sm font-light text-muted-foreground">
+              Privacy Policy
+            </Link>
     <a href="/terms-of-service" className="text-xs md:text-sm font-light text-muted-foreground">Terms of Service</a>
   </div>
 </div>
