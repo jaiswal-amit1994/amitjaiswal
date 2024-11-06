@@ -4,7 +4,7 @@ import React, { useEffect } from 'react'
 import LocomotiveScroll from 'locomotive-scroll'
 import { InputForm } from '@/components/sayhello'
 
-export default function page() {
+export default function Page() {
     useEffect(() => {
         // Ensure this code runs only in the client (browser)
         if (typeof window !== 'undefined') {

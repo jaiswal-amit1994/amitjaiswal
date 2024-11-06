@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react'
 import LocomotiveScroll from 'locomotive-scroll'
 
-export default function page() {
+export default function Page() {
     useEffect(() => {
         // Ensure this code runs only in the client (browser)
         if (typeof window !== 'undefined') {
