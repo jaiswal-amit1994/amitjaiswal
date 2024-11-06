@@ -72,7 +72,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="flex items-center py-10">
+            <section className="flex items-center pb-20 pt-10">
                 <div className="container mx-auto max-w-3xl">
                     <div className="grid grid-cols-1 items-center sm:grid-cols-3 lg:grid-cols-3">
                         <div className="col-span-2 flex flex-col justify-center pe-10">
@@ -103,7 +103,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex items-center py-10">
+            <section className="flex items-center pb-20">
                 <div className="container mx-auto max-w-3xl">
                     <h1 className="title mb-8">What I Do</h1>
 
@@ -144,7 +144,7 @@ export default function Home() {
                                             className={`group relative border-t ${isLast ? 'border-b' : 'border-b-0'}`}
                                         >
                                             <td className="py-4 align-top">
-                                                <h2 className="flex-grow whitespace-nowrap text-3xl font-semibold uppercase text-muted-foreground sm:text-4xl md:text-5xl lg:text-7xl">
+                                                <h2 className="flex-grow whitespace-nowrap text-3xl font-semibold uppercase sm:text-4xl md:text-5xl lg:text-7xl">
                                                     {item.title}
                                                 </h2>
                                             </td>
@@ -177,10 +177,10 @@ export default function Home() {
                 </div>
             </section> */}
 
-            <section className="flex py-10">
+            <section className="flex pb-20">
                 <div className="container mx-auto max-w-3xl">
                     <h1 className="title mb-8 text-lg font-medium">History</h1>
-                    <p className="pb-4 font-light text-muted-foreground">
+                    {/* <p className="pb-4 font-light text-muted-foreground">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Dolore nulla sunt excepturi quidem incidunt est numquam
                         repellat corporis aut minima distinctio, quasi
@@ -188,7 +188,7 @@ export default function Home() {
                         voluptatem sint nam? Ipsam, corrupti. Temporibus autem
                         repellendus nulla ea hic quia assumenda explicabo
                         cumque. Culpa nesciunt ea sunt, voluptate impedit at!
-                    </p>
+                    </p> */}
                     <div className="overflow-x-auto">
                         <table className="min-w-full border-gray-200">
                             <tbody>
@@ -222,7 +222,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex py-10">
+            <section className="flex pb-20">
                 <div className="container mx-auto max-w-3xl">
                     <h1 className="title mb-8 text-lg font-medium">
                         Brands That Trust My Work
@@ -248,11 +248,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="relative h-[500px] overflow-hidden">
+            <section className="relative h-screen overflow-hidden">
                 <div
                     className="parallax h-full w-full bg-cover bg-center"
                     style={{
-                        backgroundImage: `url('https://images.unsplash.com/photo-1475257026007-0753d5429e10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+                        backgroundImage: `url('https://images.unsplash.com/photo-1697898783638-d1e81c7ebab1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
                         backgroundAttachment: 'fixed', // Parallax effect
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
@@ -267,7 +267,7 @@ export default function Home() {
                                 MY MOTO
                             </h1>
 
-                            <h1 className="pb-4 text-center text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl">
+                            <h1 className="pb-4 text-center text-2xl uppercase font-extrabold sm:text-3xl md:text-4xl lg:text-7xl">
                                 Simplicity is the ultimate sophistication.
                             </h1>
                             <p className="text-center text-sm font-light sm:text-base md:text-lg lg:text-xl">
@@ -278,11 +278,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex items-center pt-10">
+            <section className="flex items-center pt-20">
                 <div className="container mx-auto max-w-3xl">
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         <div className="...">
-                            <h1 className="title">
+                            <h1 className="title mb-8 text-lg font-medium">
                                 Want product news and updates?
                             </h1>
                             <p className="mb-8 text-sm font-light text-muted-foreground">

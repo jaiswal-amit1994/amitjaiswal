@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row items-center pt-10">
+    <footer className="flex flex-col md:flex-row items-center pt-20">
   <div className="container mx-auto max-w-3xl justify-between">
     
     <h1 className="title no-underline mb-8">Stay Connected</h1>
