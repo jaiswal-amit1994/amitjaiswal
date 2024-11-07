@@ -13,7 +13,8 @@ export default function Page() {
     return (
         <section className="flex py-10">
             <div className="container mx-auto max-w-3xl">
-                <h1 className="title mb-8 text-lg font-medium">Who I Am</h1>
+                <h1 className="title mb-8 text-lg font-medium">Helping brands thrive
+                in the digital world</h1>
                 <p className="pb-4 font-light text-muted-foreground">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dolore nulla sunt excepturi quidem incidunt est numquam
