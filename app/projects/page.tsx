@@ -43,6 +43,7 @@ const products = [
     // More products...
   ]
 
+  
 export default function Page() {
     useEffect(() => {
         // Ensure this code runs only in the client (browser)
