@@ -6,39 +6,39 @@ import LocomotiveScroll from 'locomotive-scroll'
 const products = [
     {
       id: 1,
-      name: 'Basic Tee',
+      name: 'TWICE',
       href: '#',
       imageSrc: 'https://dennissnellenberg.com/media/pages/work/twice/0ab7e43954-1710404752/thumbnail-twice.jpg',
       imageAlt: "Front of men's Basic Tee in black.",
-      price: '$35',
-      color: 'Black',
+      price: '2024',
+      color: 'Interaction & Development',
     },
     {
         id: 2,
-        name: 'Basic Tee',
+        name: 'The Damai',
         href: '#',
         imageSrc: 'https://dennissnellenberg.com/media/pages/work/the-damai/b511d32d21-1710452224/thumbnail-thedamai-v2.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
+        price: '2023',
+        color: 'Design & Development',
       },
       {
         id: 3,
-        name: 'Basic Tee',
+        name: 'FABRIC™',
         href: '#',
         imageSrc: 'https://dennissnellenberg.com/media/pages/work/fabric/ac07564a5f-1688453092/thumbnail-fabric-darkgray.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
+        price: '2023',
+        color: 'Design & Development',
       },
       {
         id: 4,
-        name: 'Basic Tee',
+        name: 'Aanstekelijk',
         href: '#',
         imageSrc: 'https://dennissnellenberg.com/media/pages/work/aanstekelijk/441187fb44-1687423090/thumbnail-aanstekelijk.jpg',
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$35',
-        color: 'Black',
+        price: '2022',
+        color: 'Design & Development',
       },
     // More products...
   ]
@@ -53,10 +53,11 @@ export default function Page() {
     return (
         <section className="flex py-10">
             <div className="container mx-auto max-w-3xl">
-                <h1 className="title mb-8 text-lg font-medium">Projects</h1>
-                <p className="pb-4 font-light text-muted-foreground">
+                <h1 className="title mb-8 text-lg font-medium">Creating next level
+                digital products</h1>
+                {/* <p className="pb-4 font-light text-muted-foreground">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+                </p> */}
 
 
                 <div className="bg-white">
@@ -73,17 +74,20 @@ export default function Page() {
                   className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                 />
               </div>
-              <div className="mt-4 flex justify-between">
-                <div>
-                  <h3 className="text-sm text-gray-700">
+              <div className="mt-4">
+              <h3 className="text-sm text-gray-700">
                     <a href={product.href}>
                       <span aria-hidden="true" className="absolute inset-0" />
                       {product.name}
                     </a>
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                  <hr className="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700" />
+                <div className='flex justify-between'>
+                <p className="mt-1 text-sm text-gray-500">{product.color}</p>
+                   <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                  
                 </div>
-                <p className="text-sm font-medium text-gray-900">{product.price}</p>
+                
               </div>
             </div>
           ))}
