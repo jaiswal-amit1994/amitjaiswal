@@ -10,21 +10,21 @@ import { CalendarIcon, HandIcon } from '@radix-ui/react-icons'
 
 const tableData = [
     {
-        name: '2021',
-        role: 'Frontend Developer',
-        company: 'TechCorp',
+        name: '2021-23',
+        role: 'EvolutionCo',
+        company: 'React.js, SCSS, and Material-UI (MUI), WordPress, etc.',
         status: 'Active',
     },
     {
-        name: '2019',
-        role: 'Backend Developer',
-        company: 'TechCorp',
+        name: '2019-20',
+        role: 'Accenture',
+        company: 'AEM (Adobe Experience Manager), Jira application',
         status: 'Inactive',
     },
     {
-        name: '2017',
-        role: 'UI/UX Designer',
-        company: 'TechCorp',
+        name: '2019',
+        role: 'Goyal Infotech',
+        company: 'HTML, CSS(Bootstrap), JavaScript, Basic (PHP and MySQL).',
         status: 'Active',
     },
     // Add more objects for additional rows
@@ -111,31 +111,29 @@ export default function Home() {
                         <table className="min-w-full border-gray-200">
                             <tbody>
                                 {[
-                                    {
-                                        title: '3D',
-                                        description:
-                                            'Building responsive and user-friendly websites using the latest technologies.',
-                                    },
-                                    {
-                                        title: 'Visual',
-                                        description:
-                                            'Designing intuitive interfaces that provide an exceptional user experience.',
-                                    },
-                                    {
-                                        title: 'Motion',
-                                        description:
-                                            'Crafting digital strategies to increase visibility and engagement.',
-                                    },
-                                    {
-                                        title: 'Product',
-                                        description:
-                                            'Producing high-quality content that resonates with target audiences.',
-                                    },
-                                    {
-                                        title: 'Tutorials',
-                                        description:
-                                            'Implementing strategies to improve search engine rankings and drive organic traffic.',
-                                    },
+                                  {
+                                    title: 'UI / Front-end Developer',
+                                    description:
+                                        'Developing dynamic, adaptive layouts that ensure seamless user experiences across all devices.',
+                                },
+                                {
+                                    title: 'Wordpress 6.7',
+                                    description:
+                                        'Designing sleek, modern interfaces that prioritize user interaction and accessibility.',
+                                },
+                                {
+                                    title: 'React.js / Next.js',
+                                    description:
+                                        'Optimizing website speed and efficiency by employing best practices in coding and asset management.',
+                                },
+                                {
+                                    title: 'Animations',
+                                    description:
+                                        'Creating engaging web animations and transitions to enhance visual appeal and interactivity.',
+                                },
+                                
+                        
+                                
                                 ].map((item, index, array) => {
                                     const isLast = index === array.length - 1 // Determine if the current item is the last
                                     return (
@@ -144,15 +142,15 @@ export default function Home() {
                                             className={`group relative border-t ${isLast ? 'border-b' : 'border-b-0'}`}
                                         >
                                             <td className="py-4 align-top">
-                                                <h2 className="flex-grow whitespace-nowrap text-3xl font-semibold uppercase sm:text-4xl md:text-5xl lg:text-7xl">
+                                                <h2 className="flex-grow whitespace-nowrap text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl">
                                                     {item.title}
                                                 </h2>
                                             </td>
-                                            <td className="relative py-4 align-top">
+                                            {/* <td className="relative py-4 align-top">
                                                 <div className="hidden pl-8 font-light text-muted-foreground opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100 sm:block">
                                                     {item.description}
                                                 </div>
-                                            </td>
+                                            </td> */}
                                         </tr>
                                     )
                                 })}
@@ -225,11 +223,14 @@ export default function Home() {
             <section className="flex pb-20">
                 <div className="container mx-auto max-w-3xl">
                     <h1 className="title mb-8 text-lg font-medium">
-                        Brands That Trust My Work
+                       Experience in Prominent Brand Applications
                     </h1>
-                    {/* <p className="mt-4 text-gray-500">
-            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards.
-          </p> */}
+                    <p className="mt-4 text-gray-500">
+                    I am an experienced front-end developer with a strong focus on designing and developing applications for well-known
+brands. I excel in creating visually appealing and user-friendly interfaces using modern technologies such as HTML,
+CSS, and JavaScript. I have successfully collaborated with prominent brands, delivering high-quality solutions that
+align with their unique identities and exceed user expectations.
+          </p>
                     <dl className="mt-4 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
                         {features.map(feature => (
                             <div
@@ -248,26 +249,16 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="relative h-screen overflow-hidden">
-                <div
-                    className="parallax h-full w-full bg-cover bg-center"
-                    style={{
-                        backgroundImage: `url('https://images.unsplash.com/photo-1697898783638-d1e81c7ebab1?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
-                        backgroundAttachment: 'fixed', // Parallax effect
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                    }}
-                >
-                    {/* Blur background overlay */}
-                    <div className="absolute inset-0 bg-background/75 backdrop-blur-sm"></div>
 
-                    <div className="absolute inset-0 flex items-center justify-center">
+            <section className="flex pb-20">
+              <div className="container mx-auto max-w-3xl">
+              <div className="flex items-center justify-center bg-gray-50 p-20">
                         <div className="container mx-auto max-w-3xl">
                             <h1 className="title mb-8 text-center text-lg font-medium">
                                 MY MOTO
                             </h1>
 
-                            <h1 className="pb-4 text-center text-2xl uppercase font-extrabold sm:text-3xl md:text-4xl lg:text-7xl">
+                            <h1 className="pb-4 text-center text-2xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl">
                                 Simplicity is the ultimate sophistication.
                             </h1>
                             <p className="text-center text-sm font-light sm:text-base md:text-lg lg:text-xl">
@@ -275,8 +266,9 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
-                </div>
+              </div>
             </section>
+
 
             <section className="flex items-center pt-20">
                 <div className="container mx-auto max-w-3xl">
