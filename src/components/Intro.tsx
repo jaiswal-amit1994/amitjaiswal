@@ -4,7 +4,7 @@ export default function Intro() {
   return (
     <section 
       id="intro" 
-      className="relative min-h-screen flex items-center py-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative flex items-center py-32 px-5 overflow-hidden"
     >
       {/* Subtle background elements */}
       <div className="absolute inset-0 -z-10">
