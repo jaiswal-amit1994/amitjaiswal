@@ -29,7 +29,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-28 px-6 sm:px-8">
+    <section className="py-32 px-5">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="mb-20 text-center">
