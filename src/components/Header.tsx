@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-5 w-full fixed left-0 top-0 z-50">
+    <header className="flex justify-between items-center px-5 py-3 w-full fixed left-0 top-0 z-50 bg-[#f9f9f7]">
       <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
         <Image
           src="/images/logo.svg"
@@ -20,26 +20,26 @@ export default function Header() {
             href="#about"
             className="text-gray-700 hover:text-black font-medium text-[15px] transition-colors"
           >
-            About
+            about
           </Link>
           <Link
             href="#services"
             className="text-gray-700 hover:text-black font-medium text-[15px] transition-colors"
           >
-            Services
+            services
           </Link>
           <Link
             href="#case-studies"
             className="text-gray-700 hover:text-black font-medium text-[15px] transition-colors"
           >
-            Case Studies
+            case studies
           </Link>
         </div>
         <Link
           href="#contact"
           className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
         >
-          Let&apos;s Talk
+          Let&apos;s talk
         </Link>
       </nav>
     </header>

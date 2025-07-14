@@ -4,11 +4,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center py-10 px-4 w-full overflow-hidden">
-      {/* Blurry spotlight effects */}
-      <div className="absolute -left-20 -top-20 w-96 h-96 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-      <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-      <div className="absolute -right-20 top-1/3 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-
+      
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-8 relative z-10">
         <Image
           src="images/internetcorner.svg"
