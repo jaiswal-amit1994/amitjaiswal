@@ -9,19 +9,20 @@ export default function HeroSection() {
       <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
       <div className="absolute -right-20 top-1/3 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
 
-      <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-12 relative z-10">
+      <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-8 relative z-10">
         <Image
           src="images/internetcorner.svg"
           alt="Internet corner decoration"
           width={150}
           height={20}
+          className="mb-20"
         />
 
-        <div className="grid grid-cols-[1fr_100px_1fr] gap-4 p-4">
+        <div className="grid grid-cols-[1fr_100px_1fr] p-4">
           {/* Left Column */}
           <div className="max-w-[300px]">
-            <div className="relative max-w-sm bg-orange-50/80 text-gray-800 p-4 rounded-lg mr-6 ml-auto backdrop-blur-sm">
-              <div className="absolute -right-2 bottom-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-gray-100"></div>
+            <div className="relative max-w-sm bg-orange-300 text-black p-4 rounded-lg mr-6 ml-auto backdrop-blur-sm">
+              <div className="absolute -right-2 bottom-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-orange-300"></div>
               <p className="text-sm text-right">
                 B.Tech in Electronics & Communication
               </p>
@@ -46,8 +47,8 @@ export default function HeroSection() {
 
           {/* Right Column */}
           <div className="max-w-[300px]">
-            <div className="relative max-w-sm bg-green-50/80 text-gray-800 p-4 rounded-lg ml-6 mt-20 backdrop-blur-sm">
-              <div className="absolute -left-2 top-4 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-green-50"></div>
+            <div className="relative max-w-sm bg-green-300 text-black p-4 rounded-lg ml-6 mt-20 backdrop-blur-sm">
+              <div className="absolute -left-2 top-4 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-green-300"></div>
               <p className="text-sm text-left">
                 3+ years of professional frontend development experience.
               </p>
