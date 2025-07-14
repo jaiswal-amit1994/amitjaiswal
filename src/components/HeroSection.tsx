@@ -57,7 +57,7 @@ export default function HeroSection() {
 
         <div className="relative">
           <h3 className="text-xl md:text-2xl font-normal text-gray-700 mb-2">
-            Hello, I'm Amit.
+            Hello, I&apos;m Amit.
           </h3>
           <h1 className="text-2xl md:text-4xl font-bold text-gray-900">
             UI/UX & Frontend Developer
