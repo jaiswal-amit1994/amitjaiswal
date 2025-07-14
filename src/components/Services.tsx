@@ -50,7 +50,7 @@ export default function Services() {
                 title: "Brand Identity",
                 subtitle: "Cohesive digital presence",
               },
-            ].map((item, index) => (
+            ].map((item) => (
               <div
                 key={item.title}
                 className="border-b border-gray-100 pb-6 group"

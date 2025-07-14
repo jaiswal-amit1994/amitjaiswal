@@ -34,7 +34,7 @@ export default function About() {
               A brief intro, Who am I?
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              I'm a UI/UX and Frontend Developer with a passion for creating
+              I&apos;m a UI/UX and Frontend Developer with a passion for creating
               engaging digital experiences. With a background in design and
               development, I strive to bridge the gap between aesthetics and
               functionality.

@@ -11,7 +11,7 @@ const ContactSection = () => {
             Get in <span className="font-medium">Touch</span>
           </h2>
           <p className="text-gray-600">
-            Let's discuss how I can help bring your digital vision to life
+            Let&apos;s discuss how I can help bring your digital vision to life
           </p>
         </div>
 
