@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 px-4 sm:px-8">
+    <section id="contact" className="py-32 px-5">
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -3,16 +3,17 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="py-32 px-5">
       <div className="max-w-5xl mx-auto">
-        {/* Section Title */}
-        <div className="flex justify-center mb-16">
-          <Image 
-            src="images/about-title.svg" 
-            alt="About Section Title"
-            width={330}
-            height={20}
-          />
+         {/* Section Header */}
+        <div className="mb-20">
+          <div className="flex items-center gap-4 mb-6">
+            <span className="w-12 h-px bg-gray-400"></span>
+            <span className="text-sm uppercase tracking-widest text-gray-500">Who am i?</span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-light text-gray-900 leading-tight">
+            About <span className="font-medium">me</span>
+          </h2>
         </div>
 
         {/* Content Grid */}

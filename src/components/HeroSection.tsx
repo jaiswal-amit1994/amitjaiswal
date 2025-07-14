@@ -18,10 +18,10 @@ export default function HeroSection() {
           className="mb-20"
         />
 
-        <div className="grid grid-cols-[1fr_100px_1fr] p-4">
+        <div className="flex flex-row items-center gap-0">
           {/* Left Column */}
           <div className="max-w-[300px]">
-            <div className="relative max-w-sm bg-orange-300 text-black p-4 rounded-lg mr-6 ml-auto backdrop-blur-sm">
+            <div className="relative max-w-sm bg-orange-300 text-black p-4 rounded-lg mr-6 ml-auto mb-20 backdrop-blur-sm">
               <div className="absolute -right-2 bottom-3 w-0 h-0 border-t-8 border-b-8 border-l-8 border-t-transparent border-b-transparent border-l-orange-300"></div>
               <p className="text-sm text-right">
                 B.Tech in Electronics & Communication

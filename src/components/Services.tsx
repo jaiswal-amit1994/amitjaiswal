@@ -3,22 +3,23 @@ import Image from "next/image";
 
 export default function Services() {
   return (
-    <section className="py-24 px-4 sm:px-8">
+    <section className="py-32 px-5">
       <div className="max-w-5xl mx-auto">
-        {/* Section Title */}
-        <div className="flex justify-center mb-16">
-          <Image
-            src="images/service-title.svg"
-            alt="Services Section Title"
-            width={330}
-            height={20}
-          />
+        {/* Section Header */}
+        <div className="mb-20">
+          <div className="flex items-center gap-4 mb-6">
+            <span className="w-12 h-px bg-gray-400"></span>
+            <span className="text-sm uppercase tracking-widest text-gray-500">what i do?</span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-light text-gray-900 leading-tight">
+            Ser<span className="font-medium">vices</span>
+          </h2>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <div className="lg:pr-10">
-            <h3 className="text-xl font-bold text-gray-800 mb-6">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6">
               my expertises.
             </h3>
             <p className="text-gray-600 leading-relaxed">
