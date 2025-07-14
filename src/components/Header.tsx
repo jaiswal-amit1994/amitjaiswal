@@ -1,45 +1,46 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="flex justify-between items-center p-5 sticky top-0 z-50">
-      <a href="/" className="hover:opacity-80 transition-opacity duration-200">
+      <Link href="/" className="hover:opacity-80 transition-opacity duration-200">
         <Image
           src="/images/logo.svg"
           alt="Company Logo"
           width={80}
-          height={20} // Required - adjust this to match your logo's aspect ratio
+          height={20}
           priority
         />
-      </a>
+      </Link>
       <nav className="flex items-center gap-6">
         <div className="hidden md:flex items-center gap-6">
-          <a
+          <Link
             href="#about"
             className="text-gray-700 hover:text-black font-medium text-[15px] transition-colors"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             href="#services"
             className="text-gray-700 hover:text-black font-medium text-[15px] transition-colors"
           >
             Services
-          </a>
-          <a
+          </Link>
+          <Link
             href="#case-studies"
             className="text-gray-700 hover:text-black font-medium text-[15px] transition-colors"
           >
             Case Studies
-          </a>
+          </Link>
         </div>
-        <a
+        <Link
           href="#contact"
           className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors"
         >
-          Let's Talk
-        </a>
+          Let&apos;s Talk
+        </Link>
       </nav>
     </header>
   );
